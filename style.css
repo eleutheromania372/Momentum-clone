@@ -1,3 +1,178 @@
+body {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: url(./img/1.gif) no-repeat center;
+    background-size: cover;
+    overflow-x: hidden;
+
+    font-family: 'Barbie';
+}
+
 .hidden {
     display: none;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 80%;
+    margin: auto;
+}
+
+#clock {
+    color: white;
+    font-size: 140px;
+    position: absolute;
+    margin: 0;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#greeting{
+    width: 400px;
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    margin: 0;
+    top: 550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#quote{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    margin: 0;
+    top: 720px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+#login-form{
+    position: absolute;
+    margin: 0;
+    top: 550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+}
+
+/*로그인 폼 디자인 투명으로 바꾸기*/
+#login-form input:first-child{
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 0 0 3px;
+    border-color: white;
+    width: 250px;
+    color: white;
+    outline: none;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Barbie', 'Cafe24ClassicType-Regular';
+}
+
+#login-form input::placeholder{
+    color: white;
+}
+
+
+/*todo-form*/
+#todo-form{
+    position: absolute;
+    top: 630px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#todo-form input{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    width: 350px;
+    height: 30px;
+    font-size: 30px;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+    padding-bottom: 10px;
+    font-family: 'Barbie', 'Cafe24ClassicType-Regular';
+}
+
+#todo-form input::placeholder{
+    color: white;
+}
+
+/*todo-list*/
+
+#todo-list{
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    position: absolute;
+    margin: 0;
+    bottom: 50px;
+    right: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 500;
+    z-index: 1;
+}
+
+#todo-list li{
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#todo-list span{
+    margin-right: 15px;
+    color: white;
+    width: 190px;
+    display: inline-block;
+}
+
+/*weather 나중에 다른 디자인으로 바꾸기*/
+#weather span:first-child{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+#weather span:last-child{
+    position: absolute;
+    right:30px;
+    top: 50px;
+    font-size: 23px;
+    color: white;
+    font-weight: 600px;
+}
+
+/*font*/
+
+@font-face {
+    font-family: 'Barbie';
+    src: url("./font/barbie.ttf");
+}
+
+@font-face {
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
