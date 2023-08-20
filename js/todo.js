@@ -42,6 +42,7 @@ function handleToDoSubmit(event){
         id : Date.now(),
     };
     toDos.push(newTodoObj);
+    toDoList.classList.remove(HIDDEN_CLASSNAME);
     paintToDo(newTodoObj);
     saveToDos();
 }
@@ -49,7 +50,7 @@ function handleToDoSubmit(event){
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
-toDoList.classList.remove(HIDDEN_CLASSNAME);
+
 if(savedToDos !== null ){
     if((JSON.parse(savedToDos)).length==0){
         toDoList.classList.add("hidden");

@@ -8,7 +8,10 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url(./img/1.gif) no-repeat center;
+    background: url(./img/2.gif) no-repeat center;
+    background-size: 70%;
+    background-position: center top;
+    background-color: rgb(255, 8, 169);
     overflow-x: hidden;
     font-family: 'Barbie';
 }
@@ -32,9 +35,10 @@ img {
 #clock {
     color: white;
     font-size: 140px;
+    text-shadow: 0px 0px 10px rgb(245, 245, 245);
     position: absolute;
     margin: 0;
-    top: 400px;
+    top: 440px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -48,6 +52,7 @@ img {
     top: 550px;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Barbie', 'AppleSDGothic_KR';
 }
 
 #quote{
@@ -64,7 +69,7 @@ img {
 #login-form{
     position: absolute;
     margin: 0;
-    top: 550px;
+    top: 560px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 350px;
@@ -82,11 +87,11 @@ img {
     margin-right: 10px;
     text-align: center;
     font-size: 30px;
-    font-family: 'Barbie', 'AppleSDGothic';
+    font-family: 'Barbie', 'AppleSDGothic_KR';
 }
 
 #login-form input::placeholder{
-    color: white;
+    color: rgba(255, 255, 255, 0.6)
 }
 
 
@@ -102,18 +107,18 @@ img {
     border: none;
     background-color: transparent;
     text-align: center;
-    width: 350px;
-    height: 30px;
-    font-size: 30px;
+    width: 270px;
+    height: 25px;
+    font-size: 20px;
     border-bottom: 2px solid white;
     color: white;
     outline: none;
-    padding-bottom: 10px;
-    font-family: 'Barbie', 'AppleSDGothic_KR';
+    padding-bottom:6px;
+    font-family: 'AppleSDGothic_E', 'AppleSDGothic_KR';
 }
 
 #todo-form input::placeholder{
-    color: white;
+    color: rgba(255, 255, 255, 0.6)
 }
 
 /*todo-list*/
@@ -151,7 +156,7 @@ img {
     position: absolute;
     right: 30px;
     top: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'AppleSDGothic_E';
     color: white;
 }
@@ -159,11 +164,11 @@ img {
 #weather span:last-child{
     position: absolute;
     right:30px;
-    top: 50px;
-    font-size: 23px;
+    top: 40px;
+    font-size: 18px;
+    font-weight: 300px;
     color: white;
-    font-family: 'AppleSDGothic_E';
-    font-weight: 500px;
+    font-family: 'AppleSDGothic_EB';
 }
 
 /*font*/
@@ -182,4 +187,9 @@ img {
 @font-face {
     font-family: 'AppleSDGothic_E';
     src: url("./font/AppleSDGothicNeoSB.ttf");
+}
+
+@font-face {
+    font-family: 'AppleSDGothic_EB';
+    src: url("./font/AppleSDGothicNeoEB.ttf");
 }
